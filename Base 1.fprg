@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Base 1"/>
+        <attribute name="authors" value="gugud"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-24 12:00:19 "/>
+        <attribute name="created" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjEwOjIzOjM1ICI7MjcyNg=="/>
+        <attribute name="edited" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjExOjQ5OjMyICI7MTtndWd1ZDtMQVBUT1AtM0Y1RE42ODY7MjAyNi0wOC0yNDsiMTE6NDc6NTIgIjtjYWxjdWxvcy5mcHJnOzcwMjE="/>
+        <attribute name="edited" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjExOjUwOjI4ICI7MTtndWd1ZDtMQVBUT1AtM0Y1RE42ODY7MjAyNi0wOC0yNDsiMTE6NDk6NTcgIjtjYWxjdWxvcy5mcHJnOzcwMjU="/>
+        <attribute name="edited" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjExOjUyOjIxICI7MTtndWd1ZDtMQVBUT1AtM0Y1RE42ODY7MjAyNi0wOC0yNDsiMTE6NTE6MTMgIjtjYWxjdWxvcy5mcHJnOzcwMDU="/>
+        <attribute name="edited" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjExOjU4OjE5ICI7MTtndWd1ZDtMQVBUT1AtM0Y1RE42ODY7MjAyNi0wOC0yNDsiMTE6NTc6MDIgIjtjYWxjdWxvcy5mcHJnOzcwMjI="/>
+        <attribute name="edited" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjEyOjAwOjE5ICI7MTE7Mjg4Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opcao" type="Integer" array="False" size=""/>
+            <declare name="num1, num2, resultado, dividendo, divisor, fahrenheit, celsius, peso, altura, imc, base, area" type="Real" array="False" size=""/>
+            <assign variable="opcao" expression="0"/>
+            <while expression="opcao!= 11">
+                <output expression="&quot;CALCULADORA MULTIFUNCIONAL&quot;" newline="True"/>
+                <output expression="&quot;==========================&quot;" newline="True"/>
+                <output expression="&quot;1 - SOMAR&quot;" newline="True"/>
+                <output expression="&quot;2 - SUBTRAIR&quot;" newline="True"/>
+                <output expression="&quot;3 - MULTIPLICAR&quot;" newline="True"/>
+                <output expression="&quot;4 - DIVIDIR&quot;" newline="True"/>
+                <output expression="&quot;5 - POTENCIALIZAR&quot;" newline="True"/>
+                <output expression="&quot;6 - RAIZ QUADRADA&quot;" newline="True"/>
+                <output expression="&quot;7 - &#193;REA DO TRI&#194;NGULO&quot;" newline="True"/>
+                <output expression="&quot;8 - &#193;REA DA CIRCUNFER&#202;NCIA&quot;" newline="True"/>
+                <output expression="&quot;9 - CONVERTER FAHRENHEIT&quot;" newline="True"/>
+                <output expression="&quot;10 - CAUCULAR IMC&quot;" newline="True"/>
+                <output expression="&quot;11 - ENCERRAR PROGRAMA&quot;" newline="True"/>
+                <output expression="&quot;==========================&quot;" newline="True"/>
+                <input variable="opcao"/>
+                <if expression="opcao==1">
+                    <then/>
+                    <else>
+                        <if expression="opcao==2">
+                            <then/>
+                            <else>
+                                <if expression="opcao==3">
+                                    <then>
+                                        <output expression="&quot;Digite o primeiro numero:&quot;" newline="True"/>
+                                        <input variable="num1"/>
+                                        <output expression="&quot;Digite o segundo numero:&quot;" newline="True"/>
+                                        <input variable="num2"/>
+                                        <assign variable="resultado" expression="num1 * num2"/>
+                                        <output expression="&quot;O resultado da multiplicacao e: &quot; &amp; resultado" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="opcao==4">
+                                            <then>
+                                                <output expression="&quot;Digite o dividendo:&quot;" newline="True"/>
+                                                <input variable="dividendo"/>
+                                                <output expression="&quot;Digite o divisor:&quot;" newline="True"/>
+                                                <input variable="divisor"/>
+                                                <if expression="divisor != 0">
+                                                    <then>
+                                                        <assign variable="resultado" expression="dividendo / divisor"/>
+                                                        <output expression="&quot;O resultado da divisao e: &quot; &amp; resultado" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <output expression="&quot;Erro: Nao e possivel dividir por zero.&quot;" newline="True"/>
+                                                    </else>
+                                                </if>
+                                            </then>
+                                            <else>
+                                                <if expression="opcao==5">
+                                                    <then/>
+                                                    <else>
+                                                        <if expression="opcao==6">
+                                                            <then/>
+                                                            <else>
+                                                                <if expression="opcao==7">
+                                                                    <then>
+                                                                        <output expression="&quot;Digite o valor da base do triangulo:&quot;" newline="True"/>
+                                                                        <input variable="base"/>
+                                                                        <output expression="&quot;Digite o valor da altura do triangulo:&quot;" newline="True"/>
+                                                                        <input variable="altura"/>
+                                                                        <if expression="base &gt; 0 and altura &gt; 0">
+                                                                            <then>
+                                                                                <assign variable="area" expression="(base * altura) / 2"/>
+                                                                                <output expression="&quot;A area do triangulo e: &quot; &amp; area" newline="True"/>
+                                                                            </then>
+                                                                            <else>
+                                                                                <output expression="&quot;Erro: Base e altura devem ser maiores que zero.&quot;" newline="True"/>
+                                                                            </else>
+                                                                        </if>
+                                                                    </then>
+                                                                    <else>
+                                                                        <if expression="opcao==8">
+                                                                            <then/>
+                                                                            <else>
+                                                                                <if expression="opcao==9">
+                                                                                    <then>
+                                                                                        <output expression="&quot;Digite a temperatura em Fahrenheit:&quot;" newline="True"/>
+                                                                                        <input variable="fahrenheit"/>
+                                                                                        <assign variable="celsius" expression="(fahrenheit - 32) * 5 / 9"/>
+                                                                                        <output expression="&quot;A temperatura em Celsius e: &quot; &amp; celsius" newline="True"/>
+                                                                                    </then>
+                                                                                    <else>
+                                                                                        <if expression="opcao==10">
+                                                                                            <then>
+                                                                                                <output expression="&quot;CAUCLANDO IMC&quot;" newline="True"/>
+                                                                                                <output expression="&quot;Digite o seu peso em kilos (ex: 70.5):&quot;" newline="True"/>
+                                                                                                <input variable="peso"/>
+                                                                                                <output expression="&quot;Digite a sua altura em metros (ex: 1.75):&quot;" newline="True"/>
+                                                                                                <input variable="altura"/>
+                                                                                                <if expression="altura &gt; 0">
+                                                                                                    <then>
+                                                                                                        <assign variable="imc" expression="peso / (altura * altura)"/>
+                                                                                                        <output expression="&quot;Seu IMC e: &quot; &amp; imc" newline="True"/>
+                                                                                                    </then>
+                                                                                                    <else>
+                                                                                                        <output expression="&quot;Erro: Altura invalida.&quot;" newline="True"/>
+                                                                                                    </else>
+                                                                                                </if>
+                                                                                            </then>
+                                                                                            <else>
+                                                                                                <if expression="opcao==11">
+                                                                                                    <then>
+                                                                                                        <output expression="&quot;ENCERRANDO O PROGRAMA&quot;" newline="True"/>
+                                                                                                    </then>
+                                                                                                    <else>
+                                                                                                        <output expression="&quot;PROGRAMA FINALIZADO&quot;" newline="True"/>
+                                                                                                    </else>
+                                                                                                </if>
+                                                                                            </else>
+                                                                                        </if>
+                                                                                    </else>
+                                                                                </if>
+                                                                            </else>
+                                                                        </if>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;PROGRAMA FINALIZADO&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
