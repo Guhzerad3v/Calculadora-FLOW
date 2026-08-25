@@ -4,13 +4,13 @@
         <attribute name="name" value="Base 1"/>
         <attribute name="authors" value="gugud"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-08-24 12:00:19 "/>
+        <attribute name="saved" value="2026-08-24 09:50:23 "/>
         <attribute name="created" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjEwOjIzOjM1ICI7MjcyNg=="/>
-        <attribute name="edited" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjExOjQ5OjMyICI7MTtndWd1ZDtMQVBUT1AtM0Y1RE42ODY7MjAyNi0wOC0yNDsiMTE6NDc6NTIgIjtjYWxjdWxvcy5mcHJnOzcwMjE="/>
         <attribute name="edited" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjExOjUwOjI4ICI7MTtndWd1ZDtMQVBUT1AtM0Y1RE42ODY7MjAyNi0wOC0yNDsiMTE6NDk6NTcgIjtjYWxjdWxvcy5mcHJnOzcwMjU="/>
         <attribute name="edited" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjExOjUyOjIxICI7MTtndWd1ZDtMQVBUT1AtM0Y1RE42ODY7MjAyNi0wOC0yNDsiMTE6NTE6MTMgIjtjYWxjdWxvcy5mcHJnOzcwMDU="/>
         <attribute name="edited" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjExOjU4OjE5ICI7MTtndWd1ZDtMQVBUT1AtM0Y1RE42ODY7MjAyNi0wOC0yNDsiMTE6NTc6MDIgIjtjYWxjdWxvcy5mcHJnOzcwMjI="/>
         <attribute name="edited" value="Z3VndWQ7TEFQVE9QLTNGNURONjg2OzIwMjYtMDgtMjQ7IjEyOjAwOjE5ICI7MTE7Mjg4Mg=="/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLVJDRjkyMTE7MjAyNi0wOC0yNDsiMDk6NTA6MjMgIjsyOzMwNTg="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -35,10 +35,24 @@
                 <output expression="&quot;==========================&quot;" newline="True"/>
                 <input variable="opcao"/>
                 <if expression="opcao==1">
-                    <then/>
+                    <then>
+                        <output expression="&quot;Digite o primeiro numero:&quot;" newline="True"/>
+                        <input variable="num1"/>
+                        <output expression="&quot;Digite o segundo n&#250;mero:&quot;" newline="True"/>
+                        <input variable="num2"/>
+                        <assign variable="resultado" expression="num1 + num2"/>
+                        <output expression="&quot;O resultado da soma &#233;: &quot; &amp; resultado" newline="True"/>
+                    </then>
                     <else>
                         <if expression="opcao==2">
-                            <then/>
+                            <then>
+                                <output expression="&quot;Digite o primeiro numero:&quot;" newline="True"/>
+                                <input variable="num1"/>
+                                <output expression="&quot;Digite o segundo n&#250;mero:&quot;" newline="True"/>
+                                <input variable="num2"/>
+                                <assign variable="resultado" expression="num1 - num2"/>
+                                <output expression="&quot;O resultado da subtra&#231;&#227;o &#233;: &quot; &amp; resultado" newline="True"/>
+                            </then>
                             <else>
                                 <if expression="opcao==3">
                                     <then>
@@ -68,10 +82,22 @@
                                             </then>
                                             <else>
                                                 <if expression="opcao==5">
-                                                    <then/>
+                                                    <then>
+                                                        <output expression="&quot;Digite o n&#250;mero base:&quot;" newline="True"/>
+                                                        <input variable="num1"/>
+                                                        <output expression="&quot;Digite o expoente (pot&#234;ncia):&quot;" newline="True"/>
+                                                        <input variable="num2"/>
+                                                        <assign variable="resultado" expression="num1 ^ num2"/>
+                                                        <output expression="&quot;O resultado da pot&#234;ncia &#233;: &quot; &amp; resultado" newline="True"/>
+                                                    </then>
                                                     <else>
                                                         <if expression="opcao==6">
-                                                            <then/>
+                                                            <then>
+                                                                <output expression="&quot;Digite o n&#250;mero para calcular a raiz quadrada:&quot;" newline="True"/>
+                                                                <input variable="num1"/>
+                                                                <assign variable="resultado" expression="sqrt(num1)"/>
+                                                                <output expression="&quot;A raiz quadrada de &quot; &amp; num1 &amp; &quot; &#233;: &quot; &amp; resultado" newline="True"/>
+                                                            </then>
                                                             <else>
                                                                 <if expression="opcao==7">
                                                                     <then>
@@ -91,7 +117,12 @@
                                                                     </then>
                                                                     <else>
                                                                         <if expression="opcao==8">
-                                                                            <then/>
+                                                                            <then>
+                                                                                <output expression="&quot;Digite o raio da circunfer&#234;ncia:&quot;" newline="True"/>
+                                                                                <input variable="num1"/>
+                                                                                <assign variable="resultado" expression="3.14159 * (num1 ^ 2)"/>
+                                                                                <output expression="&quot;A &#225;rea da circunfer&#234;ncia &#233;: &quot; &amp; resultado" newline="True"/>
+                                                                            </then>
                                                                             <else>
                                                                                 <if expression="opcao==9">
                                                                                     <then>
